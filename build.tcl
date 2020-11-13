@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set fileurl "https://www-us.apache.org/dist/tcl/rivet/rivet-3.1.1.tar.gz"
-set base "libapache2-mod-rivet-3.1.1"
+set fileurl "https://www-us.apache.org/dist/tcl/rivet/rivet-3.2.0.tar.gz"
+set base "libapache2-mod-rivet-3.2.0"
 
 set var [list wget $fileurl -O $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var
@@ -10,7 +10,7 @@ exec >@stdout 2>@stderr {*}$var
 set var [list tar xzvf $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var
 
-set var [list mv rivet-3.1.1 $base]
+set var [list mv rivet-3.2.0 $base]
 exec >@stdout 2>@stderr {*}$var
 
 set var [list tar cjvf $base.tar.bz2 $base]

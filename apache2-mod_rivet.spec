@@ -32,7 +32,7 @@
 %define sourcedir libapache2-mod-rivet-%{version}
 %define rivetdir %{tcl_archdir}/%{name}%{version}
 Name:           apache2-mod_rivet
-Version:        3.1.1
+Version:        3.2.0
 Release:        0
 Summary:        Apache module containing TCL servlet engine
 License:        Apache-2.0
@@ -154,6 +154,8 @@ fi
 %config(noreplace) %{ap2rivetconffile}
 
 %changelog
+* Thu Nov 13 2020 ray2501@gmail.com
+- Update to Rivet release 3.2.0
 * Thu Jan 10 2019 ray2501@gmail.com
 - Update to Rivet release 3.1.1
 * Wed Nov 28 2018 ray2501@gmail.com
